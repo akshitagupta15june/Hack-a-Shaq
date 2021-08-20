@@ -1,0 +1,17 @@
+#submit {
+    background: $primary-yellow;
+    border: none;
+    border-radius: 5px;
+    padding: 0.8rem 1.5rem;
+    margin: 1rem auto;
+    display: block;
+    width: fit-content;
+    transition: all 100ms ease-in;
+
+    &:hover {
+        background-color: $primary-red;
+        color: $primary-yellow;
+        font-weight: 600;
+        box-shadow: rgba(0,0,0, 0.2) 2px 3px 5px;
+    }
+}

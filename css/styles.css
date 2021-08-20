@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap");
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  line-height: 1.5;
+  box-sizing: border-box; }
+
+.hidden {
+  display: none; }
+
+body {
+  font-family: 'Atkinson Hyperlegible', sans-serif; }
+
+.big-text {
+  font-size: 5rem; }
+
+.med-text {
+  font-size: 2.5rem; }
+
+.main-text {
+  font-size: 2rem; }
+
+.sub-text {
+  font-size: 1.5rem; }
+
+#submit {
+  background: #F9A01B;
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem 1.5rem;
+  margin: 1rem auto;
+  display: block;
+  width: fit-content;
+  transition: all 100ms ease-in; }
+  #submit:hover {
+    background-color: #98002E;
+    color: #F9A01B;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.2) 2px 3px 5px; }
+
+.header {
+  padding: 2rem 0;
+  text-align: center; }
+
+#quiz {
+  max-width: 120rem;
+  margin: 2rem auto; }
+
+.question {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 4rem;
+  position: relative;
+  min-height: 50rem;
+  background-color: #98002E;
+  color: #F9A01B; }
+  .question_header {
+    text-transform: uppercase; }
+  .question_question {
+    margin: 1rem 0 2rem; }
+  .question_label {
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    transition: all 150ms ease; }
+    .question_label:hover {
+      background-color: #070707;
+      box-shadow: rgba(0, 0, 0, 0.2) 2px 3px 5px;
+      color: #f5f5f5; }
+  .question_input {
+    display: none; }
+  .question_img {
+    height: fit-content;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 5px;
+    transition: all 100ms ease;
+    margin-bottom: 3rem; }
+  .question_hint {
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 50ms ease;
+    position: absolute;
+    bottom: 1rem;
+    right: 1.5rem; }
+    .question_hint:hover {
+      color: #f5f5f5; }
