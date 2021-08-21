@@ -1,10 +1,26 @@
-import { ShaqQuestions } from "./questions";
-function quiz() {
-    for (let i = 0; i < 10; i++) {
-        getRandomQuestion(shaqQuestions);
-    }
+import shaqQuestions from './questions'
+
+const quizContainer = document.querySelector('#quiz');
+const resultsContainer = document.querySelector('#results');
+const submitButton = document.querySelector('#submit');
+
+function buildQuiz() {
+    let output = [];
+
+    shaqQuestions.forEach((currentQuestion, questionNumber) => {
+        let answers = [];
+
+        for(answer in currentQuestion.answers) {
+            answers.push(
+                `<label class="question_label main-text">
+                    <input class="question_input" type="radio" name="question${questionNumber}" value="A">
+                        ${answer} : ${currentQuestion.answers[answer]}
+                </label>`
+            )
+        }
+    })
 }
-function getRandomQuestion(ShaqQuestions) {
-    let i = Math.random() * (ShaqQuestions.length - 1) + 1;
-    return ShaqQuestions[i];
-}
+function postResults() {}
+
+buildQuiz();
+submitButton.addEventListener('click', postResults)

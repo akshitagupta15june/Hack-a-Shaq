@@ -1,17 +1,30 @@
-#submit {
+#buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 38rem;
+    padding: 0;
+
+    margin: 2rem auto;
+
+    @include respond(tablet) {
+        width: 36rem;
+    }
+}
+
+.main-button {
     background: $primary-yellow;
     border: none;
     border-radius: 5px;
     padding: 0.8rem 1.5rem;
-    margin: 1rem auto;
-    display: block;
+    margin: 1rem 0;
+    display: inline-block;
     width: fit-content;
     transition: all 100ms ease-in;
+    box-shadow: rgba(0,0,0, 0.2) 2px 3px 5px;
+    cursor: pointer;
 
     &:hover {
         background-color: $primary-red;
         color: $primary-yellow;
-        font-weight: 600;
-        box-shadow: rgba(0,0,0, 0.2) 2px 3px 5px;
     }
 }

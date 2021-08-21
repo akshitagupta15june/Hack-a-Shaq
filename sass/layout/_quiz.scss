@@ -6,27 +6,46 @@
 .question {
     display: flex;
     flex-direction: column;
-    
-    padding: 2rem 4rem;
+    border-radius: 1rem;
+
+    padding: 2rem 4rem 5rem;
     position: relative;
-    min-height: 50rem;
+    min-height: 35rem;
+
     background-color: $primary-red;
     color: $primary-yellow;
+    box-shadow: rgba(0,0,0, 0.2) -3px 1px 5px 5px;
+
+    @include respond(tablet) {
+        border-radius: 0;
+    }
 
     &_header {
         text-transform: uppercase;
+        opacity: 0.75;
     }
 
     &_question {
         margin: 1rem 0 2rem;
+
+        @include respond(tablet) {
+            margin: 1rem 0 2.5rem;
+            font-size: 3rem;
+        }
     }
 
     &_label {
         padding: 1rem;
         border-radius: 5px;
-        margin-bottom: 1.5rem;
+        margin-top: 2.5rem;
         cursor: pointer;
         transition: all 150ms ease;
+        width: 45%;
+
+        @include respond(tabletLandscape) {
+            width: 100%;
+            margin-top: 1.5rem;
+        }
 
         &:hover {
             background-color: $main-black;
@@ -40,12 +59,12 @@
     }
 
     &_img {
-        height: fit-content;
         border-radius: 5px;
         box-shadow: rgba(0,0,0, 0.2) 1px 2px 5px;
         transition: all 100ms ease;
 
-        margin-bottom: 3rem;
+        max-width: 95%;
+        margin: 1rem auto 3rem;
     }
     &_hint {
         width: fit-content;
@@ -63,4 +82,10 @@
             color: $main-white;
         }
     }
+}
+
+.label_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
