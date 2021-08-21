@@ -23,35 +23,42 @@
                 How many freethrows can Shaq make?
             </p>
 
-            <label class="question_label main-text">
-                <input class="question_input" type="radio" name="question1" value="A">
-                A : None
-            </label>
-
-            <label class="question_label main-text">
-                <input class="question_input" type="radio" name="question2" value="B">
-                B : Never misses
-            </label>
-
-            <label class="question_label main-text">
-                <input class="question_input" type="radio" name="question3" value="C">
-                C : 50/50
-            </label>
-
-            <label class="question_label main-text">
-                <input class="question_input" type="radio" name="question4" value="D">
-                D : Get his rebound
-            </label>
+            <div class="label_container">
+                <label class="question_label main-text">
+                    <input class="question_input" type="radio" name="question1" value="A">
+                    A : None
+                </label>
+    
+                <label class="question_label main-text">
+                    <input class="question_input" type="radio" name="question1" value="B">
+                    B : Never misses
+                </label>
+    
+                <label class="question_label main-text">
+                    <input class="question_input" type="radio" name="question1" value="C">
+                    C : 50/50
+                </label>
+    
+                <label class="question_label main-text">
+                    <input class="question_input" type="radio" name="question1" value="D">
+                    D : Get his rebound
+                </label>
+            </div>
 
             <img src="/images/question1.jpg" alt="Shaq Freethrow Image" class="question_img hidden">
             <button class="question_hint sub-text">
-                Hint?
+                Hint
             </button>
         </div>
+
+        <div id="buttons">
+            <button class="sub-text main-button" id="previousQuestion">Previous Question</button>
+            <button class="sub-text main-button" id="nextQuestion">Next Question</button>
+            
+            <button class="sub-text main-button hidden" id="submit">Submit</button>
+        </div>
     </div>
-    
-    <button class="main-text" id="submit">Submit</button>
-    
+
     <div id="results"></div>
 
     <script src="/js/index.js"></script>
