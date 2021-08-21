@@ -1,4 +1,4 @@
-var ShaqQuestions = [
+export var shaqQuestions = [
     {
         question: 'Can Shaq make freethrows?',
         questionNumber: '1',
