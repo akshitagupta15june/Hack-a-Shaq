@@ -22,9 +22,10 @@ body {
     position: relative;
     line-height: 1.5;
     box-sizing: border-box;
-    background-image: url('../images/background.jpg');
-    background-position: cover;
-    min-height: 100vh;
+    background-image: url('../images/back.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 120vh;
     background-repeat: no-repeat;
 }
 

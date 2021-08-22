@@ -18,11 +18,13 @@ html {
       font-size: 50%; } }
 
 body {
+  position: relative;
   line-height: 1.5;
   box-sizing: border-box;
-  background-image: url("../images/background.jpg");
-  background-position: cover;
-  min-height: 100vh;
+  background-image: url("../images/back.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 120vh;
   background-repeat: no-repeat; }
 
 .hidden {
@@ -121,7 +123,7 @@ body {
     border-radius: 5px;
     margin-top: 2.5rem;
     cursor: pointer;
-    transition: all 150ms ease;
+    transition: all 100ms ease;
     width: 45%; }
     @media (max-width: 75em) {
       .question_label {
@@ -141,6 +143,7 @@ body {
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 5px;
     transition: all 100ms ease;
+    max-width: 95%;
     height: 40rem;
     margin: 1rem auto 3rem; }
   .question_hint {
