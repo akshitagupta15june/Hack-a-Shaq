@@ -1,6 +1,14 @@
-#quiz {
+// #quiz {
+//     max-width: 120rem;
+//     margin: 2rem auto;
+// }
+
+.quiz_container {
+    position: relative;
+    display: block;
     max-width: 120rem;
     margin: 2rem auto;
+    height: fit-content;
 }
 
 .question {
@@ -84,8 +92,31 @@
     }
 }
 
-.label_container {
+.answers {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+
+    z-index: 10;
+    opacity: 0;
+
+    transition: opacity 70ms ease-in;
+}
+
+.active_slide {
+    z-index: 50;
+    opacity: 1;
+}
+
+#results {
+    margin: 2rem auto;
+    color: $main-white;
+    font-size: 3rem;
+    display: block;
+    text-align: center;
 }

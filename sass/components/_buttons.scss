@@ -1,7 +1,6 @@
 #buttons {
     display: flex;
-    justify-content: space-between;
-    width: 38rem;
+    justify-content: center;
     padding: 0;
 
     margin: 2rem auto;
@@ -16,7 +15,7 @@
     border: none;
     border-radius: 5px;
     padding: 0.8rem 1.5rem;
-    margin: 1rem 0;
+    margin: 1rem 1.5rem;
     display: inline-block;
     width: fit-content;
     transition: all 100ms ease-in;

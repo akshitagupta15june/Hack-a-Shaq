@@ -12,55 +12,22 @@
         <h1 class="header_main big-text">Hack-a-Shaq</h1>
         <h2 class="header_sub med-text">How well do you know basketball?</h2>
     </header>
-
-    <div id="quiz">
-        <div class="question" id="q1">
-            <h3 class="question_header sub-text">
-                Question <span class="question_header--number">1</span> of 10
-            </h3>
-
-            <p class="question_question med-text">
-                How many freethrows can Shaq make?
-            </p>
-
-            <div class="label_container">
-                <label class="question_label main-text">
-                    <input class="question_input" type="radio" name="question1" value="A">
-                    A : None
-                </label>
     
-                <label class="question_label main-text">
-                    <input class="question_input" type="radio" name="question1" value="B">
-                    B : Never misses
-                </label>
-    
-                <label class="question_label main-text">
-                    <input class="question_input" type="radio" name="question1" value="C">
-                    C : 50/50
-                </label>
-    
-                <label class="question_label main-text">
-                    <input class="question_input" type="radio" name="question1" value="D">
-                    D : Get his rebound
-                </label>
-            </div>
-
-            <img src="./images/question1.jpg" alt="Shaq Freethrow Image" class="question_img hidden">
-            <button class="question_hint sub-text">
-                Hint
-            </button>
-        </div>
-
-        <div id="buttons">
-            <button class="sub-text main-button" id="previousQuestion">Previous Question</button>
-            <button class="sub-text main-button" id="nextQuestion">Next Question</button>
-            
-            <button class="sub-text main-button hidden" id="submit">Submit</button>
-        </div>
+    <div id="buttons">
+        <button class="sub-text main-button" id="previous">Previous Question</button>
+        <button class="sub-text main-button" id="next">Next Question</button>
+        <button class="sub-text main-button" id="submit">Submit Answers</button>
     </div>
 
     <div id="results"></div>
+    
+    <div class="quiz_container">
+        <div id="quiz"></div>
+    </div>
 
+    
+
+    <script src="./js/questions.js"></script>
     <script src="./js/index.js"></script>
 </body>
 </html>
