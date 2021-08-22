@@ -50,7 +50,7 @@
         border-radius: 5px;
         margin-top: 2.5rem;
         cursor: pointer;
-        transition: all 150ms ease;
+        transition: all 100ms ease;
         width: 45%;
 
         @include respond(tabletLandscape) {
