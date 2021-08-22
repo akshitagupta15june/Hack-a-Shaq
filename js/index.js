@@ -28,6 +28,7 @@ const buildQuiz = () => {
                         ${currentQuestion.question}
                     </h3>
 
+                    <img class="question_img" src="${currentQuestion.image}">
                     <div class="answers"> ${answers.join('')} </div>
                 </div>
             </div>`

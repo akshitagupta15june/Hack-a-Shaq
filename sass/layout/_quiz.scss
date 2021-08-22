@@ -1,8 +1,3 @@
-// #quiz {
-//     max-width: 120rem;
-//     margin: 2rem auto;
-// }
-
 .quiz_container {
     position: relative;
     display: block;
@@ -12,6 +7,7 @@
 }
 
 .question {
+    text-align: center;
     display: flex;
     flex-direction: column;
     border-radius: 1rem;
@@ -23,6 +19,13 @@
     background-color: $primary-red;
     color: $primary-yellow;
     box-shadow: rgba(0,0,0, 0.2) -3px 1px 5px 5px;
+
+    margin-bottom: 5rem;
+
+
+    @include respond(tabletLandscape) {
+        text-align: left;
+    }
 
     @include respond(tablet) {
         border-radius: 0;
@@ -51,7 +54,7 @@
         width: 45%;
 
         @include respond(tabletLandscape) {
-            width: 100%;
+            max-width: 50%;
             margin-top: 1.5rem;
         }
 
@@ -71,7 +74,7 @@
         box-shadow: rgba(0,0,0, 0.2) 1px 2px 5px;
         transition: all 100ms ease;
 
-        max-width: 95%;
+        height: 40rem;
         margin: 1rem auto 3rem;
     }
     &_hint {
@@ -103,14 +106,14 @@
     width: 100%;
 
     z-index: 10;
-    opacity: 0;
+    display: none;
 
     transition: opacity 70ms ease-in;
 }
 
 .active_slide {
     z-index: 50;
-    opacity: 1;
+    display: block;
 }
 
 #results {
