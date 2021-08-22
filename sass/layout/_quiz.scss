@@ -67,6 +67,12 @@
 
     &_input {
         display: none;
+
+        &:checked + .question_label {            
+            background-color: $main-black;
+            box-shadow: rgba(0,0,0, 0.2) 2px 3px 5px;
+            color: $main-white;
+        }
     }
 
     &_img {
